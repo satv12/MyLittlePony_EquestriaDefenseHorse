@@ -1,0 +1,853 @@
+﻿Log file open, 06/11/17 23:46:15
+LogInit:Display: Running engine for game: EDM_Project
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-856667593) SRandInit(-856667593).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.092151
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3466753
+LogInit: Engine Version: 4.16.1-3466753+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): May 31 2017 02:03:30
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.11-14.46.16:087][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.11-14.46.16:087][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.11-14.46.16:145][  0]LogInit: Computer: SATV12-PC
+[2017.06.11-14.46.16:145][  0]LogInit: User: satv12
+[2017.06.11-14.46.16:145][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.06.11-14.46.16:145][  0]LogInit: High frequency timer resolution =2.913105 MHz
+[2017.06.11-14.46.16:145][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.06.11-14.46.16:145][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.11-14.46.16:145][  0]LogMemory: Process Physical Memory: 275.49 MB used, 275.49 MB peak
+[2017.06.11-14.46.16:145][  0]LogMemory: Process Virtual Memory: 263.52 MB used, 263.52 MB peak
+[2017.06.11-14.46.16:145][  0]LogMemory: Physical Memory: 4540.76 MB used,  11841.70 MB free, 16382.46 MB total
+[2017.06.11-14.46.16:145][  0]LogMemory: Virtual Memory: 620.45 MB used,  11841.70 MB free, 8388608.00 MB total
+[2017.06.11-14.46.16:270][  0]LogInit: Using OS detected language (ja-JP).
+[2017.06.11-14.46.16:270][  0]LogInit: Using OS detected locale (ja-JP).
+[2017.06.11-14.46.16:413][  0]LogTextLocalizationManager: No specific localization for 'ja-JP' exists, so the 'ja' localization will be used.
+[2017.06.11-14.46.26:064][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.11-14.46.26:789][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.06.11-14.46.26:789][  0]LogD3D11RHI:       4008/0/7935 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.11-14.46.26:789][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.11-14.46.26:794][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.11-14.46.26:794][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.11-14.46.26:794][  0]LogWindows: EnumDisplayDevices:
+[2017.06.11-14.46.26:794][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.06.11-14.46.26:795][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.06.11-14.46.26:795][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.06.11-14.46.26:795][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.06.11-14.46.26:795][  0]LogD3D11RHI:   Driver Version: 382.53 (internal:22.21.13.8253, unified:382.53)
+[2017.06.11-14.46.26:795][  0]LogD3D11RHI:      Driver Date: 6-7-2017
+[2017.06.11-14.46.26:795][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.11-14.46.27:446][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.11-14.46.27:551][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.06.11-14.46.27:599][  0]LogShaderCompilers: Guid format shader working directory is -14 characters bigger than the processId version (D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Intermediate/Shaders/WorkingDirectory/7184/).
+[2017.06.11-14.46.27:599][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/satv12/AppData/Local/Temp/UnrealShaderWorkingDir/E92B49714C6561132570FDA2A743D4DB/'.
+[2017.06.11-14.46.27:599][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.11-14.46.29:201][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.11-14.46.29:270][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.11-14.46.29:340][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.11-14.46.29:409][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.11-14.46.29:502][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.11-14.46.29:572][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.11-14.46.29:641][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.11-14.46.29:711][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.11-14.46.29:772][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.11-14.46.29:849][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.11-14.46.29:918][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.11-14.46.29:987][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.11-14.46.30:055][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.11-14.46.30:123][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.11-14.46.30:193][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.11-14.46.30:331][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.11-14.46.30:331][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.11-14.46.30:386][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.11-14.46.30:517][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.11-14.46.30:556][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.11-14.46.30:624][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.11-14.46.30:692][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.11-14.46.30:760][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.11-14.46.30:845][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.11-14.46.30:845][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.11-14.46.31:474][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache: Loaded boot cache 1.40s 101MB C:/Users/satv12/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/satv12/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.11-14.46.32:851][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.11-14.46.32:957][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.11-14.46.32:970][  0]LogDerivedDataCache: Using Local data cache path C:/Users/satv12/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.11-14.46.32:993][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.06.11-14.46.32:993][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.11-14.46.33:013][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.11-14.46.33:013][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.11-14.46.38:144][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.11-14.46.38:149][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.11-14.46.38:490][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.11-14.46.38:551][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.11-14.46.38:615][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.11-14.46.38:615][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.11-14.46.38:615][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.11-14.46.39:489][  0]LogNetVersion: EDM_Project , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3394934449)
+[2017.06.11-14.46.39:580][  0]LogAssetRegistry: FAssetRegistry took 0.0265 seconds to start up
+[2017.06.11-14.46.39:638][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.031852 seconds
+[2017.06.11-14.46.39:643][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.06.11-14.46.39:643][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.06.11-14.46.39:643][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.11-14.46.39:724][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.11-14.47.08:091][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.11-14.47.08:138][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.11-14.47.09:479][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.11-14.47.10:077][  0]SourceControl: 情報 ソースコントロールは無効です
+[2017.06.11-14.47.10:118][  0]SourceControl: 情報 ソースコントロールは無効です
+[2017.06.11-14.47.10:183][  0]SourceControl: 情報 ソースコントロールは無効です
+[2017.06.11-14.47.10:266][  0]SourceControl: 情報 ソースコントロールは無効です
+[2017.06.11-14.47.11:390][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.06.11-14.47.12:429][  0]LogEngine: Initializing Engine...
+[2017.06.11-14.47.12:429][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.11-14.47.12:740][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.11-14.47.12:740][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.11-14.47.12:945][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.11-14.47.12:956][  0]LogInit: XAudio2 using 'BenQ GL2450H-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.11-14.47.12:983][  0]LogInit: FAudioDevice initialized.
+[2017.06.11-14.47.13:044][  0]LogDerivedDataCache: Saved boot cache 0.06s 101MB C:/Users/satv12/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.11-14.47.13:071][  0]LogInit: Texture streaming: Enabled
+[2017.06.11-14.47.13:197][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.11-14.47.13:688][  0]LogInit: Transaction tracking system initialized
+[2017.06.11-14.47.14:117][  0]BlueprintLog: New page: エディタの読み込み
+[2017.06.11-14.47.15:438][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2017.06.11-14.47.16:470][  0]LogConsoleResponse:Display: 
+[2017.06.11-14.47.17:800][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.11-14.47.17:800][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.11-14.47.18:714][  0]LogFileCache: Scanning file cache for directory 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/' took 0.01s
+[2017.06.11-14.47.20:304][  0]SourceControl: 情報 ソースコントロールは無効です
+[2017.06.11-14.47.20:304][  0]Cmd: MAP LOAD FILE="D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/SideScrollerBP/Maps/SideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.11-14.47.20:344][  0]LightingResults: New page: ライティングのビルド
+[2017.06.11-14.47.20:419][  0]MapCheck: New page: マップをチェック
+[2017.06.11-14.47.20:419][  0]LightingResults: New page: <何も選択されていません>
+[2017.06.11-14.47.21:135][  0]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2017.06.11-14.47.21:146][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.11-14.47.21:168][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.11-14.47.21:244][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 67.771ミリ秒かかりました。
+[2017.06.11-14.47.21:244][  0]LogFileHelpers: Loading map 'SideScrollerExampleMap' took 0.920
+[2017.06.11-14.47.21:600][  0]LogCollectionManager: Loaded 0 collections in 0.001544 seconds
+[2017.06.11-14.47.21:692][  0]LogFileCache: Scanning file cache for directory 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Saved/Collections/' took 0.01s
+[2017.06.11-14.47.21:692][  0]LogFileCache: Scanning file cache for directory 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Developers/satv12/Collections/' took 0.01s
+[2017.06.11-14.47.21:692][  0]LogFileCache: Scanning file cache for directory 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Collections/' took 0.01s
+[2017.06.11-14.47.21:692][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.06.11-14.47.21:703][  0]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 2329 classes and 491 folders.
+[2017.06.11-14.47.21:789][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.06.11-14.47.22:563][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2017.06.11-14.47.22:631][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.06.11-14.47.22:691][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.11-14.47.22:732][  0]LogSlate: Took 0.016717 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.11-14.47.23:635][  0]LogSlate: Took 0.883201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2017.06.11-14.47.23:702][  0]LogSlate: Took 0.058650 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.11-14.47.23:730][  0]LogSlate: Took 0.018429 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.11-14.47.24:071][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
+[2017.06.11-14.47.24:261][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2017.06.11-14.47.24:350][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.06.11-14.47.24:350][  0]LogLoad: (Engine Initialization) Total time: 69.13 seconds
+[2017.06.11-14.47.24:350][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.20 seconds
+[2017.06.11-14.47.24:350][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.06.11-14.47.24:732][  0]LogOcInput: OculusInput pre-init called
+[2017.06.11-14.47.24:732][  0]LogHMD: Starting GearVRController plugin
+[2017.06.11-14.47.24:759][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.11-14.47.24:891][  0]LogSlate: Took 0.001709 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.11-14.47.25:116][  1]LogAssetRegistry: Asset discovery search completed in 43.4015 seconds
+[2017.06.11-14.47.25:118][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.06.11-14.47.25:118][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2017.06.11-14.47.34:565][668]LogTemp: Repeting last play command: 選択ビューポート
+[2017.06.11-14.47.34:651][668]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.47.34:651][668]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.11-14.47.34:652][668]PIE: New page: PIEセッション: SideScrollerExampleMap (2017/06/12 8:47:34)
+[2017.06.11-14.47.34:652][668]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2017.06.11-14.47.34:684][668]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033364s)
+[2017.06.11-14.47.34:685][668]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2017.06.11-14.47.34:685][668]LogPlayLevel: PIE: World Init took: (0.001181s)
+[2017.06.11-14.47.34:685][668]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.034797s)
+[2017.06.11-14.47.34:703][668]LogInit: XAudio2 using 'BenQ GL2450H-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.11-14.47.34:708][668]LogInit: FAudioDevice initialized.
+[2017.06.11-14.47.34:778][668]LogBlueprint:Warning: [BP_Lily] 'JointTargetRight' variable not found. Base class was probably changed.
+[2017.06.11-14.47.34:778][668]LogBlueprint:Warning: [BP_Lily] 'JointTargetLeft' variable not found. Base class was probably changed.
+[2017.06.11-14.47.34:778][668]LogBlueprint:Warning: [BP_Lily] 'IKoffsetRightFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.47.34:778][668]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.47.34:781][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:781][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:781][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.47.34:781][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.47.34:782][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:782][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:786][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.47.34:787][668]LogBlueprint:Error: [Compiler BP_Lily] エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.47.34:787][668]LogBlueprint:Error: [Compiler BP_Lily] エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.47.34:787][668]LogBlueprint:Error: [Compiler BP_Lily] エラー  IKoffset Right Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.47.34:787][668]LogBlueprint:Error: [Compiler BP_Lily] エラー  IKoffset Left Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.47.34:795][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0079.42] Compile of BP_Lily failed. 4 Fatal Issue(s) 12 Warning(s) [in 17 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.47.34:796][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0079.42] Compile of BP_Lily failed. 4 Fatal Issue(s) 13 Warning(s) [in 0 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.47.34:796][668]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0079.42] Compile of BP_Lily failed. 4 Fatal Issue(s) 14 Warning(s) [in 0 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.47.37:051][668]LogLoad: Game class is 'SideScrollerGameMode_C'
+[2017.06.11-14.47.37:055][668]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2017.06.11-23.47.37
+[2017.06.11-14.47.37:055][668]LogWorld: Bringing up level for play took: 0.001995
+[2017.06.11-14.47.37:124][668]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2017.06.11-14.47.37:127][668]PIE: 情報 /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap 3.222のプレイ イン エディタの開始時間
+[2017.06.11-14.47.37:128][668]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.47.42:068][230]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.47.42:099][230]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.47.45:237][534]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.11-14.47.45:738][534]LogSlate: Took 0.000255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.11-14.47.45:885][534]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 112 classes and 0 folders.
+[2017.06.11-14.47.47:068][534]LogSlate: Took 0.055219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.06.11-14.47.47:319][535]LogSlate: Took 0.026175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.06.11-14.48.21:485][951]LogRenderer: Reallocating scene render targets to support 1208x900 NumSamples 1 (Frame:1).
+[2017.06.11-14.48.40:137][330]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.06.11-14.48.40:559][330]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.06.11-14.48.40:877][330]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2017.06.11-14.48.41:693][330]LogContentBrowser: Native class hierarchy updated for 'ClothingSystemEditorInterface' in 0.0007 seconds. Added 1 classes and 0 folders.
+[2017.06.11-14.50.33:632][ 28]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:656][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:660][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:660][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:661][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:661][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:661][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:661][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー  Joint Target Right  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー  Joint Target Left  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー  IKoffset Right Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:662][ 28]LogBlueprint:Error: [Compiler BP_Lily] エラー  IKoffset Left Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:902][ 28]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:902][ 28]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Warning: 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー このブループリント（自）は ' ターゲット ' と互換性がないため対象のピンに接続が必須です。
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー  Joint Target Right  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー  Joint Target Left  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー  IKoffset Right Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:903][ 28]BlueprintEditorCompileResults:Error: エラー  IKoffset Left Foot  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.50.33:904][ 28]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0264.92] Compile of BP_Lily failed. 6 Fatal Issue(s) 12 Warning(s) [in 282 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.51.38:340][782]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.51.38:363][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:363][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:363][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.38:363][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.38:363][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:364][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:367][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:368][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:368][782]LogBlueprint:Error: [Compiler BP_Lily] エラー  Joint Target Right  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.51.38:368][782]LogBlueprint:Error: [Compiler BP_Lily] エラー  Joint Target Left  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Warning: 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Error: エラー  Joint Target Right  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.51.38:598][782]BlueprintEditorCompileResults:Error: エラー  Joint Target Left  に関連付けられたプロパティが見つかりませんでした
+[2017.06.11-14.51.38:599][782]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0332.02] Compile of BP_Lily failed. 2 Fatal Issue(s) 8 Warning(s) [in 268 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.51.55:188][943]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.51.55:208][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:208][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:208][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.55:208][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.55:209][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:209][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 "JointTargetLeft"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetLeft を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:336][943]BlueprintEditorCompileResults:Warning: 警告 "JointTargetRight"という名前の変数は 'BP_Lily_C'にありません。
+'BP_Lily_C' が  JointTargetRight を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.51.55:337][943]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0349.39] Compile of BP_Lily successful, but with 6 Warning(s) [in 154 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.52.31:038][505]LogSlate: Took 0.030327 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.06.11-14.53.07:984][ 91]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.53.08:005][ 91]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.08:005][ 91]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.08:005][ 91]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.08:005][ 91]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.08:137][ 91]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.08:137][ 91]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.08:137][ 91]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.08:137][ 91]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.08:138][ 91]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0424.90] Compile of BP_Lily successful, but with 4 Warning(s) [in 159 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.53.56:659][349]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.53.56:680][349]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.56:680][349]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.56:680][349]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.56:680][349]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.56:808][349]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.56:808][349]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.53.56:808][349]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.56:808][349]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.53.56:809][349]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0475.39] Compile of BP_Lily successful, but with 4 Warning(s) [in 154 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.54.09:201][ 27]LogClass:Warning: Type mismatch in IKoffsetLeftFoot of SKEL_BP_Lily_C - Previous (StructProperty) Current(FloatProperty) for package:  FObjectReader
+[2017.06.11-14.54.09:220][ 27]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.54.19:141][674]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.54.19:161][674]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.54.19:162][674]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.54.19:162][674]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.54.19:162][674]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.54.19:165][674]LogClass:Warning: Type mismatch in IKoffsetLeftFoot of BP_Lily_C - Previous (StructProperty) Current(FloatProperty) for package:  FObjectReader
+[2017.06.11-14.54.19:289][674]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.54.19:289][674]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.54.19:289][674]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.54.19:289][674]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.54.19:290][674]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0498.53] Compile of BP_Lily successful, but with 4 Warning(s) [in 154 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.55.15:405][470]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.55.18:279][640]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.55.18:300][640]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.18:300][640]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.18:300][640]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.18:300][640]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.18:430][640]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.18:430][640]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.18:430][640]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.18:430][640]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.18:431][640]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0559.79] Compile of BP_Lily successful, but with 4 Warning(s) [in 157 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.55.35:700][656]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.55.38:103][801]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.55.38:124][801]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.38:124][801]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.38:124][801]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.38:124][801]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.38:252][801]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.38:252][801]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.38:252][801]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.38:252][801]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.38:253][801]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0580.20] Compile of BP_Lily successful, but with 4 Warning(s) [in 155 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.55.53:123][647]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.55.57:285][910]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.55.57:305][910]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.57:305][910]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.57:305][910]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.57:306][910]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.57:433][910]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.57:433][910]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.55.57:433][910]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.57:433][910]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.55.57:434][910]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0599.87] Compile of BP_Lily successful, but with 4 Warning(s) [in 154 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.56.14:595][917]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.56.18:784][182]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.56.18:805][182]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.18:805][182]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.18:805][182]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.18:805][182]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.18:940][182]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.18:940][182]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.18:940][182]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.18:940][182]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.18:941][182]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0622.04] Compile of BP_Lily successful, but with 4 Warning(s) [in 162 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.56.45:982][917]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.56.48:522][ 71]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.56.48:542][ 71]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.48:542][ 71]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.48:542][ 71]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.48:543][ 71]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.48:671][ 71]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.48:671][ 71]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.56.48:671][ 71]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.48:671][ 71]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.56.48:672][ 71]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0652.73] Compile of BP_Lily successful, but with 4 Warning(s) [in 156 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.57.04:794][ 25]LogClass:Warning: Type mismatch in IKoffsetLeftFoot of SKEL_BP_Lily_C - Previous (StructProperty) Current(FloatProperty) for package:  FObjectReader
+[2017.06.11-14.57.04:819][ 25]LogBlueprint:Warning: [BP_Lily] 'IKoffsetLeftFoot' variable not found. Base class was probably changed.
+[2017.06.11-14.57.13:992][603]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.57.14:013][603]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.57.14:013][603]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.57.14:013][603]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.57.14:013][603]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.57.14:016][603]LogClass:Warning: Type mismatch in IKoffsetLeftFoot of BP_Lily_C - Previous (StructProperty) Current(FloatProperty) for package:  FObjectReader
+[2017.06.11-14.57.14:142][603]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.57.14:142][603]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.57.14:142][603]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.57.14:142][603]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.57.14:143][603]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0679.00] Compile of BP_Lily successful, but with 4 Warning(s) [in 156 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.58.04:601][101]BlueprintLog: New page: BP_Lily をコンパイル
+[2017.06.11-14.58.04:622][101]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.58.04:622][101]LogBlueprint:Warning: [Compiler BP_Lily] 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.58.04:622][101]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.58.04:622][101]LogBlueprint:Warning: [Compiler BP_Lily] 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.58.04:747][101]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetLeftFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetLeftFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.58.04:747][101]BlueprintEditorCompileResults:Warning: 警告 "IKoffsetRightFoot"という名前の変数は 'BP_Lily'にありません。
+'BP_Lily' が  IKoffsetRightFoot を取得  用にコンパイルされていることを確認してください。
+[2017.06.11-14.58.04:747][101]BlueprintEditorCompileResults:Warning: 警告 ピン  Object  と  Return Value  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.58.04:747][101]BlueprintEditorCompileResults:Warning: 警告 ピン  Return Value  と  Object  は接続できません： This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.06.11-14.58.04:748][101]LogBlueprint:Warning: [Compiler BP_Lily] 警告 [0731.50] Compile of BP_Lily successful, but with 4 Warning(s) [in 152 ms] (/Game/Geometry/Lily/BP_Lily.BP_Lily)
+[2017.06.11-14.58.29:513][675]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Geometry/Lily/BP_Lily" FILE="D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Geometry/Lily/BP_Lily.uasset" SILENT=true
+[2017.06.11-14.58.29:597][675]LogSavePackage: Save=80.51ms
+[2017.06.11-14.58.29:597][675]LogSavePackage: Moving 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Saved/BP_Lily897003BA445168A4CC755094C4BBF8F0.tmp' to 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Geometry/Lily/BP_Lily.uasset'
+[2017.06.11-14.58.29:599][675]LogSavePackage:Display: Finished SavePackage D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Geometry/Lily/BP_Lily.uasset
+[2017.06.11-14.58.37:375][326]LogTemp: Repeting last play command: 選択ビューポート
+[2017.06.11-14.58.37:389][326]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.58.37:389][326]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.11-14.58.37:390][326]PIE: New page: PIEセッション: SideScrollerExampleMap (2017/06/12 8:58:37)
+[2017.06.11-14.58.37:390][326]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2017.06.11-14.58.37:413][326]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023879s)
+[2017.06.11-14.58.37:414][326]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2017.06.11-14.58.37:414][326]LogPlayLevel: PIE: World Init took: (0.001125s)
+[2017.06.11-14.58.37:414][326]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.025303s)
+[2017.06.11-14.58.37:436][326]LogInit: XAudio2 using 'BenQ GL2450H-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.11-14.58.37:442][326]LogInit: FAudioDevice initialized.
+[2017.06.11-14.58.37:472][326]LogLoad: Game class is 'SideScrollerGameMode_C'
+[2017.06.11-14.58.37:474][326]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2017.06.11-23.58.37
+[2017.06.11-14.58.37:475][326]LogWorld: Bringing up level for play took: 0.001952
+[2017.06.11-14.58.37:477][326]PIE: 情報 /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap 1.054のプレイ イン エディタの開始時間
+[2017.06.11-14.58.37:478][326]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.58.41:139][767]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.58.41:170][767]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2017.06.11-14.58.53:278][634]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2017.06.11-14.58.53:326][634]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_10:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2017.06.11-14.59.02:331][262]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_12:PersistentLevel.Actor_2.DebugSkelMeshComponent_3) Already registered. Aborting.
+[2017.06.11-14.59.02:364][262]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_12:PersistentLevel.Actor_2.DebugSkelMeshComponent_3) - call TermArticulated first.
+[2017.06.11-14.59.04:866][262]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2017.06.11-14.59.56:219][757]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_15:PersistentLevel.Actor_3.DebugSkelMeshComponent_6) Already registered. Aborting.
+[2017.06.11-14.59.56:252][757]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_15:PersistentLevel.Actor_3.DebugSkelMeshComponent_6) - call TermArticulated first.
+[2017.06.11-15.00.57:925][236]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.11-15.01.54:579][666]Cmd: TRANSACTION UNDO
+[2017.06.11-15.01.54:579][666]LogEditorTransaction: Undo ソケットを移動
+[2017.06.11-15.01.54:580][666]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_12:PersistentLevel.Actor_2.DebugSkelMeshComponent_3) Already registered. Aborting.
+[2017.06.11-15.02.04:998][666]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2017.06.11-15.02.05:003][666]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_15:PersistentLevel.Actor_3.DebugSkelMeshComponent_6) Already registered. Aborting.
+[2017.06.11-15.02.08:249][892]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/SideScrollerBP/Maps/SideScrollerExampleMap' took 0.020
+[2017.06.11-15.02.44:390][568]Cmd: QUIT_EDITOR
+[2017.06.11-15.02.44:419][568]LogExit: Preparing to exit.
+[2017.06.11-15.02.45:395][568]LogExit: Editor shut down
+[2017.06.11-15.02.45:403][568]LogExit: Transaction tracking system shut down
+[2017.06.11-15.02.45:529][568]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.11-15.02.45:529][568]LogExit: Object subsystem successfully closed.
+[2017.06.11-15.02.45:548][568]LogD3D11RHI: Shutdown
+[2017.06.11-15.02.45:548][568]LogD3D11RHI: CleanupD3DDevice
+[2017.06.11-15.02.45:648][568]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module AnimationEditor (540)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (538)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module ClothingSystemEditorInterface (536)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module SkeletonEditor (534)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (532)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module BlueprintGraph (530)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (528)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (526)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.06.11-15.02.45:672][568]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.06.11-15.02.45:672][568]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.06.11-15.02.45:673][568]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.06.11-15.02.45:673][568]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.06.11-15.02.45:673][568]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.06.11-15.02.45:673][568]LogDirectoryWatcher: A directory notification for 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Collections/' was aborted.
+[2017.06.11-15.02.45:674][568]LogDirectoryWatcher: A directory notification for 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/Developers/satv12/Collections/' was aborted.
+[2017.06.11-15.02.45:674][568]LogDirectoryWatcher: A directory notification for 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Saved/Collections/' was aborted.
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.06.11-15.02.45:674][568]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.06.11-15.02.45:675][568]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.06.11-15.02.45:675][568]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.06.11-15.02.45:675][568]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.06.11-15.02.45:675][568]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.06.11-15.02.45:675][568]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.06.11-15.02.45:988][568]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.06.11-15.02.45:989][568]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.06.11-15.02.46:029][568]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.06.11-15.02.46:043][568]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.06.11-15.02.46:044][568]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.06.11-15.02.46:044][568]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.06.11-15.02.46:044][568]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.06.11-15.02.46:044][568]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.06.11-15.02.46:044][568]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.06.11-15.02.46:198][568]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.06.11-15.02.46:198][568]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.06.11-15.02.46:198][568]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.06.11-15.02.46:198][568]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.06.11-15.02.46:199][568]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.06.11-15.02.46:201][568]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.06.11-15.02.46:201][568]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.06.11-15.02.46:201][568]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.06.11-15.02.46:202][568]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.06.11-15.02.46:302][568]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.06.11-15.02.46:402][568]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.06.11-15.02.46:404][568]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.06.11-15.02.46:405][568]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.06.11-15.02.46:406][568]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.06.11-15.02.46:406][568]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.06.11-15.02.46:406][568]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.06.11-15.02.46:406][568]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.06.11-15.02.46:411][568]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.06.11-15.02.46:511][568]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.06.11-15.02.46:511][568]LogDirectoryWatcher: A directory notification for 'D:/ライブラリ/ドキュメント/GitProjects/EquestriaDefenseMares/EDM_Project/Content/' was aborted.
+[2017.06.11-15.02.46:511][568]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.06.11-15.02.46:511][568]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.06.11-15.02.46:516][568]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module PhysXFormats (156)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module MeshUtilities (154)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (153)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (151)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (149)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module LevelSequence (146)
+[2017.06.11-15.02.46:517][568]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.06.11-15.02.46:605][568]LogDerivedDataCache: Shutdown
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.06.11-15.02.46:605][568]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.06.11-15.02.46:606][568]LogOnline:Display: Unloading online subsystem: NULL
+[2017.06.11-15.02.46:606][568]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.06.11-15.02.46:607][568]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.06.11-15.02.46:607][568]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.06.11-15.02.46:607][568]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BF58D6239-43CD-7A91-939D-66B3EEE02B12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.1-3466753%2B%2B%2BUE4%2BRelease-4.16&UserID=448410744b266a4c1a3a4ba7ece012f7%7Cf7843e21c7ad4d7dab13e2d1ce93588f%7C799a921f-da26-4440-ae39-1b58a29f2079&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.06.11-15.02.46:610][568]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.06.11-15.02.46:612][568]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.06.11-15.02.46:615][568]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.06.11-15.02.46:615][568]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.06.11-15.02.46:615][568]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.06.11-15.02.46:615][568]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.06.11-15.02.46:615][568]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.06.11-15.02.46:616][568]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.06.11-15.02.46:616][568]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.06.11-15.02.46:616][568]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.06.11-15.02.46:616][568]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.06.11-15.02.46:616][568]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.06.11-15.02.46:617][568]LogExit: Exiting.
+[2017.06.11-15.02.46:630][568]Log file closed, 06/12/17 00:02:46
